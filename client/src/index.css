@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* In your global CSS file or Tailwind config */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  /* Light Theme Colors */
+  --bg-color: #ffffff; /* Light background */
+  --text-color: #2d3748; /* Dark text */
+  --link-color: #3182ce; /* Link color */
+  --sidebar-bg-color: #e2e2e2; /* Sidebar background */
+  --button-bg-color: #3182ce; /* Button background */
+  --button-text-color: #ffffff; /* Button text color */
+}
+
+.dark {
+  /* Dark Theme Colors */
+  --bg-color: #1a202c; /* Dark background */
+  --text-color: #f7fafc; /* Light text */
+  --link-color: #63b3ed; /* Link color */
+  --sidebar-bg-color: #2d3748; /* Sidebar background */
+  --button-bg-color: #2b6cb0; /* Button background */
+  --button-text-color: #ffffff; /* Button text color */
+}
+
+/* Apply the colors globally */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s linear;
+}
+
+a {
+  color: var(--link-color);
+}
+
+button {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.sidebar {
+  background-color: var(--sidebar-bg-color);
+  color: var(--text-color);
+}
+input,.mainColor{
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+/* Add any other styles as needed */
+
