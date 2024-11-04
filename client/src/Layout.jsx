@@ -46,7 +46,7 @@ function Layout() {
       </div>
 
       <div
-        className={`flex-1 p-4 transition-all duration-300 ease-in-out ${
+        className={`flex-1 py-10 px-16 transition-all duration-300 ease-in-out ${
           isOpen ? "ml-64" : "ml-0"
         } md:ml-64`}
       >

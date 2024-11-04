@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../../assets/images/quicke.png";
+import { Link } from "react-router-dom";
 function LoginBox() {
   return (
     <div>
@@ -12,7 +13,7 @@ function LoginBox() {
 
             <div className="p-8 rounded-2xl .sidebar shadow">
               <h2 className=" text-center text-2xl font-bold">
-                Sign in
+                Log in
               </h2>
               <form className="mt-8 space-y-4">
                 <div>
@@ -105,17 +106,17 @@ function LoginBox() {
                     type="button"
                     className="w-full py-3 px-4 text-sm tracking-wide rounded-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none"
                   >
-                    Sign in
+                    Log in
                   </button>
                 </div>
                 <p className=" text-sm !mt-8 text-center">
                   Don't have an account?{" "}
-                  <a
+                  <Link to={"/Sighin"}
                     href="javascript:void(0);"
                     className="text-blue-600 hover:underline ml-1 whitespace-nowrap font-semibold"
                   >
                     Register here
-                  </a>
+                  </Link>
                 </p>
               </form>
             </div>
