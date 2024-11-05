@@ -24,17 +24,19 @@ code {
   --button-bg-color: #3182ce; /* Button background */
   --button-text-color: #eeeeee; /* Button text color */
   --text2-color: rgb(34, 34, 34);
+  --light-bg_back: rgba(255, 255, 255, 0.471);
 }
 
 .dark {
   /* Dark Theme Colors */
-  --bg-color: #1a202c; /* Dark background */
+  --bg-color: #171821; /* Dark background */
   --text-color: #f7fafc; /* Light text */
   --link-color: #63b3ed; /* Link color */
-  --sidebar-bg-color: #2d374869; /* Sidebar background */
+  --sidebar-bg-color:  #21222d; /* Sidebar background */
   --text2-color: rgb(195, 210, 224);
   --button-bg-color: #2b6cb0; /* Button background */
   --button-text-color: #ffffff; /* Button text color */
+  --light-bg_back: rgba(0, 0, 0, 0.471);
 }
 
 /* Apply the colors globally */
@@ -80,4 +82,34 @@ input,.mainColor{
   overflow-wrap: break-word;
   text-overflow: ellipsis;
   white-space: wrap;
+}
+.ProductEditDiv{
+  padding: 10px;
+  background-color: var(--sidebar-bg-color);
+  color: var(--text2-color);
+  border-radius: 10px;
+}
+.ProductEditDiv input,select{
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--bg-color);
+  color: var(--text2-color);
+}
+.ProductEditTable{
+  width: 100%;
+  padding: 10px;
+  border-radius: 15px;
+}
+.ProductEditTable td,th{
+  padding: 8px 15px;
+}
+.PopUPSec{
+  background-color: var(--light-bg_back);
+}
+.PopUPSec button{
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  padding: 7px 16px;
+  border-radius: 8px;
 }
